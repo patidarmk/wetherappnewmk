@@ -1,0 +1,93 @@
+import { WeatherData } from '@/types/weather';
+import { Sun, Cloud, CloudRain, CloudSun, CloudSnow, CloudLightning } from 'lucide-react';
+
+export const weatherData: WeatherData[] = [
+  {
+    city: 'New York',
+    country: 'USA',
+    current: {
+      temperature: 72,
+      condition: 'Partly Cloudy',
+      icon: CloudSun,
+      feelsLike: 74,
+      humidity: 65,
+      windSpeed: 8,
+      uvIndex: 5,
+      pressure: 1012,
+      visibility: '10 mi',
+    },
+    forecast: [
+      { day: 'Tue', date: 'Jun 18', high: 78, low: 65, condition: 'Sunny', icon: Sun },
+      { day: 'Wed', date: 'Jun 19', high: 82, low: 68, condition: 'Partly Cloudy', icon: CloudSun },
+      { day: 'Thu', date: 'Jun 20', high: 75, low: 62, condition: 'Showers', icon: CloudRain },
+      { day: 'Fri', date: 'Jun 21', high: 80, low: 66, condition: 'Thunderstorms', icon: CloudLightning },
+      { day: 'Sat', date: 'Jun 22', high: 85, low: 70, condition: 'Sunny', icon: Sun },
+    ],
+  },
+  {
+    city: 'London',
+    country: 'UK',
+    current: {
+      temperature: 64,
+      condition: 'Light Rain',
+      icon: CloudRain,
+      feelsLike: 63,
+      humidity: 88,
+      windSpeed: 12,
+      uvIndex: 2,
+      pressure: 1005,
+      visibility: '5 mi',
+    },
+    forecast: [
+      { day: 'Tue', date: 'Jun 18', high: 68, low: 58, condition: 'Cloudy', icon: Cloud },
+      { day: 'Wed', date: 'Jun 19', high: 70, low: 60, condition: 'Showers', icon: CloudRain },
+      { day: 'Thu', date: 'Jun 20', high: 65, low: 55, condition: 'Partly Cloudy', icon: CloudSun },
+      { day: 'Fri', date: 'Jun 21', high: 69, low: 59, condition: 'Cloudy', icon: Cloud },
+      { day: 'Sat', date: 'Jun 22', high: 72, low: 61, condition: 'Sunny', icon: Sun },
+    ],
+  },
+  {
+    city: 'Tokyo',
+    country: 'Japan',
+    current: {
+      temperature: 81,
+      condition: 'Sunny',
+      icon: Sun,
+      feelsLike: 85,
+      humidity: 70,
+      windSpeed: 5,
+      uvIndex: 8,
+      pressure: 1015,
+      visibility: '12 mi',
+    },
+    forecast: [
+      { day: 'Tue', date: 'Jun 18', high: 85, low: 75, condition: 'Sunny', icon: Sun },
+      { day: 'Wed', date: 'Jun 19', high: 86, low: 76, condition: 'Partly Cloudy', icon: CloudSun },
+      { day: 'Thu', date: 'Jun 20', high: 82, low: 72, condition: 'Showers', icon: CloudRain },
+      { day: 'Fri', date: 'Jun 21', high: 84, low: 74, condition: 'Sunny', icon: Sun },
+      { day: 'Sat', date: 'Jun 22', high: 88, low: 78, condition: 'Partly Cloudy', icon: CloudSun },
+    ],
+  },
+  {
+    city: 'Sydney',
+    country: 'Australia',
+    current: {
+      temperature: 68,
+      condition: 'Clear',
+      icon: Sun,
+      feelsLike: 68,
+      humidity: 55,
+      windSpeed: 10,
+      uvIndex: 4,
+      pressure: 1020,
+      visibility: '15 mi',
+    },
+    forecast: [
+      { day: 'Tue', date: 'Jun 18', high: 70, low: 58, condition: 'Sunny', icon: Sun },
+      { day: 'Wed', date: 'Jun 19', high: 72, low: 60, condition: 'Partly Cloudy', icon: CloudSun },
+      { day: 'Thu', date: 'Jun 20', high: 68, low: 56, condition: 'Cloudy', icon: Cloud },
+      { day: 'Fri', date: 'Jun 21', high: 65, low: 54, condition: 'Showers', icon: CloudRain },
+      { day: 'Sat', date: 'Jun 22', high: 71, low: 59, condition: 'Sunny', icon: Sun },
+    ],
+  },
+];
